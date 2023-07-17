@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Classify">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="10dp"
+                android:background="@drawable/white_rounded_card"
+                android:orientation="vertical"
+                android:layout_marginTop="5sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/corn"
+                    android:background="@color/black"
+                    android:scaleType="centerCrop"/>
+                <LinearLayout
+                    android:background="@drawable/rounded_card"
+                    android:elevation="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Result: Health"
+                        android:id="@+id/resid"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:text="Confidence Level: 100%"
+                            android:id="@+id/confi_id"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/edit_btn"
+                            android:background="@drawable/rounded_green"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Save Image"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="2sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            app:iconGravity="textStart" />
+                    </LinearLayout>
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/progree"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_marginTop="5sp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                                <TextView
+                                    android:text="Expert Advice"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                        android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:id="@+id/data"
+                                    android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+                                    android:textSize="12dp"
+                                    android:layout_marginTop="10dp"
+                                    android:padding="8sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/cords"
+                                android:textColor="@color/black"
+                                android:text="cordinates"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

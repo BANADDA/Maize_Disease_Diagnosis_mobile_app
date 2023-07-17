@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "182965644044",
+    "project_id": "maizedisease",
+    "storage_bucket": "maizedisease.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182965644044:android:9722819cbbe4471dcab729",
+        "android_client_info": {
+          "package_name": "com.example.maize"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182965644044-tmhdn33j9bntdsvhhrdtrj672rde23ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZphw0z7M96toJiP5STtQvE_cIOPDVMw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182965644044-tmhdn33j9bntdsvhhrdtrj672rde23ib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

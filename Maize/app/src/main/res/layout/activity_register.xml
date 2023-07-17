@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/phones"/>
+            <LinearLayout
+                android:elevation="16dp"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/TextAppearance.MaterialComponents.Caption"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:text="CREATE ACCOUNT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                   android:inputType="textEmailAddress"
+                    android:id="@+id/essimu"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:layout_margin="20sp"
+                    android:padding="10sp"
+                    android:textSize="14dp"
+                    android:hint="agricexpert@gmail.com"
+                    android:background="@drawable/rounded_card"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:id="@+id/passid"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:padding="10sp"
+                    android:textSize="14dp"
+                    android:hint="password"
+                    android:background="@drawable/rounded_card"
+                    android:layout_height="match_parent" />
+
+                <ProgressBar
+                    android:id="@+id/progrebarid"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="SignUp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_margin="20dp"
+                        android:textColor="@color/white"
+                        android:id="@+id/Phonecontinuebtn"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_green"
+                        android:layout_height="wrap_content" />
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/reg_id"
+                        android:text="Already have an Account?  Login Now"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
